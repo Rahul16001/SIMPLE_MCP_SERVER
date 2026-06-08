@@ -21,12 +21,11 @@ def check_armstrong_number(
 
 
 if __name__ == "__main__":
-    import os
-
-mcp.run(
+    mcp.run(
     transport="streamable-http",
     host="0.0.0.0",
     port=int(os.environ.get("PORT", 10000))
 )
+
 
 
