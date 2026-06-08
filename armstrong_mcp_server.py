@@ -1,4 +1,5 @@
 from mcp.server.fastmcp import FastMCP
+import os
 
 mcp = FastMCP("My Simple MCP Server")
 
@@ -20,6 +21,12 @@ def check_armstrong_number(
 
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http")
+    import os
+
+mcp.run(
+    transport="streamable-http",
+    host="0.0.0.0",
+    port=int(os.environ.get("PORT", 10000))
+)
 
 
