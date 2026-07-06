@@ -1,7 +1,7 @@
 from fastmcp import FastMCP
 import os
 
-mcp = FastMCP("My MCP Server")
+mcp = FastMCP("My Simple MCP Server")
 
 from pydantic import Field
 from mcp.server.fastmcp.prompts import base
