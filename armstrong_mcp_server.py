@@ -8,7 +8,7 @@ from mcp.server.fastmcp.prompts import base
 
 @mcp.tool(
     name="Check Armstrong number",
-    description="Check if a number is an Armstrong number.",
+    description="Check if a number is an Armstrong number or not.",
 )
 def check_armstrong_number(
     n: int = Field(description="The number to check"),
